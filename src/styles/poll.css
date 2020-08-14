@@ -1,0 +1,379 @@
+/* Post full content */
+
+.post-full-content {
+  position: relative;
+  min-height: 230px;
+  margin: 0 auto;
+  padding: 70px 100px 0;
+  font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 2.2rem;
+  line-height: 1.6em;
+  background: #fff;
+}
+
+@media (max-width: 1170px) {
+  .post-full-content {
+    padding: 5vw 7vw 0;
+  }
+}
+@media (max-width: 800px) {
+  .post-full-content {
+    font-size: 1.9rem;
+  }
+}
+
+/* Post Feed */
+
+.post-feed {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+  padding: 40px 0 0 0;
+}
+
+.post-card {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+  margin: 0 10px 20px;
+  background: #fff center center;
+  background-size: cover;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease;
+  padding: 15px 15px 15px 15px;
+}
+
+.post-card:hover {
+  box-shadow: -2px 8px 22px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+
+.post-card-image-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 2px 2px 0 0;
+}
+
+.post-card-image {
+  width: auto;
+  height: 200px;
+  background: var(--lightgrey) no-repeat center center;
+  background-size: cover;
+}
+
+.post-card-content-link {
+  position: relative;
+  display: block;
+  padding: 25px 25px 0;
+  color: var(--darkgrey);
+}
+
+.post-card-content-link:hover {
+  text-decoration: none;
+}
+
+.post-card-tags {
+  display: block;
+  margin-bottom: 4px;
+  color: #ffc740;
+  font-size: 1.2rem;
+  line-height: 1.15em;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.post-card-title {
+  margin-top: 0;
+}
+
+.post-card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post-card-excerpt {
+  font-family: Nunito Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.post-card-meta {
+  padding: 0 25px 25px;
+}
+
+.author-profile-image {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  border-radius: 100%;
+
+  object-fit: cover;
+}
+
+.post-card-author {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 795px) {
+  .home-template .post-feed .post-card:nth-child(6n + 1):not(.no-image) {
+    flex: 1 1 100%;
+    flex-direction: row;
+  }
+
+  .home-template
+    .post-feed
+    .post-card:nth-child(6n + 1):not(.no-image)
+    .post-card-image-link {
+    position: relative;
+    flex: 1 1 auto;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .home-template
+    .post-feed
+    .post-card:nth-child(6n + 1):not(.no-image)
+    .post-card-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .home-template
+    .post-feed
+    .post-card:nth-child(6n + 1):not(.no-image)
+    .post-card-content {
+    flex: 0 1 357px;
+  }
+
+  .home-template .post-feed .post-card:nth-child(6n + 1):not(.no-image) h2 {
+    font-size: 2.6rem;
+  }
+
+  .home-template .post-feed .post-card:nth-child(6n + 1):not(.no-image) p {
+    font-size: 1.8rem;
+    line-height: 1.55em;
+  }
+
+  .home-template
+    .post-feed
+    .post-card:nth-child(6n + 1):not(.no-image)
+    .post-card-content-link {
+    padding: 30px 40px 0;
+  }
+
+  .home-template
+    .post-feed
+    .post-card:nth-child(6n + 1):not(.no-image)
+    .post-card-meta {
+    padding: 0 40px 30px;
+  }
+}
+
+.home-template .site-header:after {
+  display: none;
+}
+
+/* Adjust some margins for smaller screens */
+@media (max-width: 650px) {
+  .post-feed {
+    padding-top: 5vw;
+  }
+  .post-card {
+    margin: 0 20px 5vw;
+  }
+}
+
+/* Single Post */
+
+.post-template .site-main,
+.page-template .site-main {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  background: #fff;
+}
+
+.post-full {
+  position: relative;
+  z-index: 50;
+}
+
+.post-full-header {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 6vw 3vw 0vw;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .post-full-header {
+    padding: 14vw 3vw 10vw;
+  }
+}
+
+.post-full-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #141c3a;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.post-full-meta a {
+  color: #141c3a;
+}
+
+.post-full-meta-date {
+  color: #141c3a;
+}
+
+.post-full-title {
+  margin: 2rem 0;
+  color: var(--midnightblue);
+  line-height: 6rem;
+}
+
+.poll p {
+  font-size: 130%;
+  flex: 0 0 50%;
+}
+
+.poll p:nth-child(1) {
+  text-align: left;
+}
+.poll p:nth-child(2) {
+  text-align: center;
+}
+
+.avatar {
+  height: 50px;
+  border-radius: 25px;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.pollBtn,
+.voteBtn {
+  font-size: 90%;
+  color: #fff;
+  padding: 5px;
+  background: #4caf50;
+  border: 2px solid #4caf50;
+  cursor: pointer;
+  margin: 2rem 0 0 0;
+}
+.voteBtn {
+  margin: 0;
+}
+.pollBtn:hover {
+  color: #4caf50;
+  background: #bdbdbd;
+}
+
+/* Leaderboard */
+
+.leadersList {
+  padding-top: 3rem;
+}
+
+.leaders.head {
+  font-weight: 700;
+  border-bottom: 1px solid #000000;
+  
+}
+
+.leaders {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+.leaders p {
+  flex: 1 0 20%;
+  text-align: center;
+}
+.leaders p:nth-child(1) {
+  flex: 0 0 40%;
+  text-align: left;
+}
+
+.leaders p:last-child {
+  margin-bottom: 1.5em;
+}
+.newPollForm {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.newPollForm h2 {
+  margin-top: 2rem;
+  color: #5c4343;
+}
+.newPollForm input {
+  padding: 0.8rem 1rem;
+  font-size: 130%;
+  width: 400px;
+}
+
+.pollsList {
+  padding: 2rem;
+}
+
+.pollsList h3 {
+  color: #5c4343;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.pollDetail p {
+  text-align: center;
+  font-size: 130%;
+  flex: 0 0 50%;
+}
+.pollDetail {
+  display: flex;
+  /* width: 80%; */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Style the tab */
+.tab {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  padding: 5px 20px;
+  width: 300px;
+  line-height: 25px;
+  border: 2px solid #4caf50;
+  background-color: #ffffff;
+  color: #4caf50;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #4caf50;
+  color: #ffffff;
+}

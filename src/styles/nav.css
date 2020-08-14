@@ -1,0 +1,147 @@
+/* Site Navigation */
+
+.site-nav {
+  position: relative;
+  z-index: 300;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 40px;
+  overflow-y: hidden;
+  font-size: 1.2rem;
+}
+
+.site-nav-left {
+  align-items: center;
+  overflow-x: visible;
+  overflow-y: visible;
+  margin-right: 10px;
+  padding-bottom: 80px;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-scrolling: touch;
+}
+
+.site-nav,
+.site-nav-left {
+  display: flex;
+}
+
+.site-nav-center {
+  margin-left: 75px;
+}
+
+.site-nav-center,
+.site-nav-home {
+  overflow-x: auto;
+  overflow-y: hidden;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-scrolling: touch;
+}
+
+.site-nav-home {
+  font-size: 13px;
+  margin: 0 6vw;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 33px;
+}
+
+@media (max-width: 875px) {
+  .site-nav-home {
+    padding-left: 0;
+  }
+}
+
+.site-nav-logo {
+  flex-shrink: 0;
+  display: block;
+  margin-right: 24px;
+  padding: 11px 0;
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 1em;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+}
+
+.site-nav-logo:hover {
+  text-decoration: none;
+}
+
+.site-nav-logo img {
+  display: block;
+  width: auto;
+  height: 21px;
+}
+
+.nav {
+  display: flex;
+  margin: 0 0 0 -12px;
+  padding: 0;
+  list-style: none;
+}
+
+.nav li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.nav li a {
+  display: block;
+  margin: 0;
+  padding: 10px 12px;
+  line-height: 28px;
+  color: var(--midnightblue);
+  opacity: 0.9;
+}
+
+.nav li a:hover {
+  text-decoration: none;
+  color: #6400e4;
+  opacity: 1;
+}
+
+.social-links {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links a:last-of-type {
+  padding-right: 20px;
+}
+
+.social-link {
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.social-link:hover {
+  opacity: 1;
+}
+
+.social-link img {
+  height: 3.8rem;
+  fill: #fff;
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .site-nav-left {
+    margin-right: 0;
+    padding-left: 4vw;
+  }
+}
